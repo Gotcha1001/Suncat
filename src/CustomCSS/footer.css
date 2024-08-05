@@ -1,0 +1,75 @@
+/* Footer Styles */
+
+/* Default Footer Styles for Logged-Out Users */
+.footer-default {
+  background: linear-gradient(90deg, #000000, #808080); /* Black and gray */
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles for Male Users */
+.footer-male {
+  background: linear-gradient(90deg, #000000, #808080); /* Black and gray */
+  color: white;
+}
+
+/* Footer Styles for Female Users */
+.footer-female {
+  background: linear-gradient(90deg, #0cbe50, #1a0966); /* Green and purple */
+  color: white;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-left: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #06b6d4;
+}
+
+/* Define the active footer link style */
+.active-footer-link {
+  background-color: teal;
+  color: white !important;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* Media Queries for Footer */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
+
+  .footer-links a {
+    font-size: 1.2rem;
+  }
+}

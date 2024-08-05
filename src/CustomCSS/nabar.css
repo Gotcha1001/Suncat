@@ -1,0 +1,126 @@
+/* Base Styles for Navbar */
+@media (forced-colors: active) {
+  .navbar {
+    background-color: ButtonFace;
+    color: ButtonText;
+  }
+
+  .navbar-title a {
+    color: LinkText;
+  }
+}
+
+/* Default Navbar Style */
+.navbar {
+  background: linear-gradient(90deg, #0cbe50, #1a0966);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-title a:hover {
+  color: #cccccc;
+}
+
+.navbar-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: auto; /* Push links to the right */
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #06b6d4;
+}
+
+.active-link {
+  background-color: teal;
+  color: white !important;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  width: 300px;
+  height: 130px;
+  margin-right: 20px; /* Add some space between the logo and the links */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center; /* Center items vertically */
+  }
+
+  .navbar-element-welcome span {
+    margin-right: 5px; /* Smaller margin for smaller screens */
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+  }
+
+  .navbar-title {
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    align-items: center; /* Center links horizontally on small screens */
+    margin-top: 10px; /* Add margin between links */
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Adjust spacing between links */
+  }
+
+  .navbar-links a {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    display: flex; /* Ensure icons are displayed in a row */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Push icons to the right */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .social-icons a {
+    margin-right: 10px; /* Add margin between icons */
+  }
+}
+
+/* Absolute positioning for Navbar Logo */
+.absolute {
+  position: absolute;
+  z-index: 10; /* Ensure this value is higher than other elements on the page */
+}
+
+/* Welcome Message Container */
+.welcome-message-container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
